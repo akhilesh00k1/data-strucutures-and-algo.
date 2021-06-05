@@ -14,16 +14,19 @@ public class insertionsort {
 
     public static void insertsort(int[]arr) {
         for(int pass=1;pass<arr.length-1;pass++){
+        //temp 
             int val=arr[pass];
+        //reverse loop
             int rpass=pass-1;
             while(rpass >=0 && arr[rpass]>val){
                 arr[rpass+1]=arr[rpass];
                 rpass--;
 
 
+
             }
             
-
+//rpass +1 bcoz before getting out of loop  j--
             arr[rpass+1]=val;
             
                 
